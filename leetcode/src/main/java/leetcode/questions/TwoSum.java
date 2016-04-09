@@ -6,4 +6,8 @@ public class TwoSum {
 		return null;
 	}
 
+	public int findUpperBoundIndex(int[] nums, int target) {
+		return 1;
+	}
+
 }

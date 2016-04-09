@@ -26,4 +26,8 @@ public class TestTwoSum {
 		assertThat(twoSum.find(this.nums, this.target), is(new int[] {0,1}));
 	}
 	
+	@Test
+	public void testGetUpperBoundIndexByTheTarget() {
+		assertThat(twoSum.findUpperBoundIndex(this.nums, target), is(1));
+	}
 }
