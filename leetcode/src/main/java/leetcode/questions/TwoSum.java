@@ -1,19 +1,19 @@
 package leetcode.questions;
 
+import java.util.stream.IntStream;
+
 public class TwoSum {
 
-	public int[] find(int[] nums, int target) {
-		return null;
-	}
-
-	public int findUpperBoundIndex(int[] nums, int target) {
-		if(target < nums[0]) {
-			return 0; 
-		} else if(nums[nums.length-1] < target){
-			return nums.length - 1;
-		} else {
-			return 1;
+	public int[] twoSum(int[] nums, int target) {
+		
+		for(int i = 0; i < nums.length; i++) {
+			for(int j =i + 1; j < nums.length; j++) {
+				if(nums[i] + nums[j] == target ) {
+					return new int[] {i , j};
+				}
+			}
 		}
+		
+		return new int[2];
 	}
-
 }

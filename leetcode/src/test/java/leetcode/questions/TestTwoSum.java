@@ -1,11 +1,10 @@
 package leetcode.questions;
 
-import org.junit.Before;
-import org.junit.Ignore;
-import org.junit.Test;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 
-import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
 
 public class TestTwoSum {
 	
@@ -21,23 +20,8 @@ public class TestTwoSum {
 	}
 
 	@Test
-	@Ignore
 	public void testTwoSum() {
-		assertThat(twoSum.find(this.nums, this.target), is(new int[] {0,1}));
+		assertThat(twoSum.twoSum(this.nums, this.target), is(new int[] {0,1}));
 	}
 	
-	@Test
-	public void testGetUpperBoundIndexByTheTarget() {
-		assertThat(twoSum.findUpperBoundIndex(this.nums, target), is(1));
-	}
-	
-	@Test
-	public void testGetUpperBoundIndexOnLowerEdgeCase() {
-		assertThat(twoSum.findUpperBoundIndex(this.nums, 1), is(0));
-	}
-	
-	@Test
-	public void testGetUpperBoundIndexOnUpperEdgeCase() {
-		assertThat(twoSum.findUpperBoundIndex(this.nums, 16), is(3));
-	}
 }
