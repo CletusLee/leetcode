@@ -18,10 +18,11 @@ public class TestTwoSum {
 
 	@Test
 	@Ignore
-	public void firstTwoSum() {
+	public void testTwoSum() {
 		int nums[] = {2,7,11,15};
 		int target = 9;
 		
-		assertThat(twoSum.find(nums), is(new int[] {0,1}));
+		assertThat(twoSum.find(nums, 9), is(new int[] {0,1}));
 	}
+
 }
