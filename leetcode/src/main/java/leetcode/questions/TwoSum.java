@@ -1,6 +1,5 @@
 package leetcode.questions;
 
-import java.util.stream.IntStream;
 
 public class TwoSum {
 
