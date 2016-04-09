@@ -35,4 +35,9 @@ public class TestTwoSum {
 	public void testGetUpperBoundIndexOnLowerEdgeCase() {
 		assertThat(twoSum.findUpperBoundIndex(this.nums, 1), is(0));
 	}
+	
+	@Test
+	public void testGetUpperBoundIndexOnUpperEdgeCase() {
+		assertThat(twoSum.findUpperBoundIndex(this.nums, 16), is(3));
+	}
 }
