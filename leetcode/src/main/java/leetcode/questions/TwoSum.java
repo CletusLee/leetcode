@@ -7,7 +7,11 @@ public class TwoSum {
 	}
 
 	public int findUpperBoundIndex(int[] nums, int target) {
-		return 1;
+		if(target < nums[0]) {
+			return 0; 
+		} else {
+			return 1;
+		}
 	}
 
 }

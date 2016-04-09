@@ -30,4 +30,9 @@ public class TestTwoSum {
 	public void testGetUpperBoundIndexByTheTarget() {
 		assertThat(twoSum.findUpperBoundIndex(this.nums, target), is(1));
 	}
+	
+	@Test
+	public void testGetUpperBoundIndexOnLowerEdgeCase() {
+		assertThat(twoSum.findUpperBoundIndex(this.nums, 1), is(0));
+	}
 }
