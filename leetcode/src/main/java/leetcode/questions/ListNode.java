@@ -9,10 +9,12 @@ public class ListNode {
 	
 	ListNode(int... vals) {
 		this.val = vals[0];
+		ListNode cur = this;
 		
-		IntStream.range(1, vals.length).forEach(index -> {
+		for(int index = 1; index < vals.length; index++) {
 			ListNode newNode = new ListNode(vals[index]);
-			this.next = newNode;
-		});
+			cur.next = newNode;
+			cur = newNode;
+		}
 	}
 }
