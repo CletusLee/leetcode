@@ -48,9 +48,9 @@ public class TestAddTwoNumbers {
 	public void abc() {
 		ListNode l1 = new ListNode(1);
 		ListNode l2 = new ListNode(9,9);
-		
+
 		ListNode result = AddTwoNumbers.addTwoNumbers(l1, l2);
-		
+
 		assertThat(result.val, is(0));
 		assertThat(result.next.val, is(0));
 		assertThat(result.next.next.val, is(1));
