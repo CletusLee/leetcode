@@ -14,5 +14,6 @@ class TestMedianOfTwoSortedArrays extends Specification {
         where:
         nums                                                        | startIndex | endIndex || median
         [1, 10, 18, 19, 20, 28, 34, 35, 42, 46, 64, 68, 69, 87, 91] | 1          | 3        || 18
+        [1, 10, 18, 19, 20, 28, 34, 35, 42, 46, 64, 68, 69, 87, 91] | 2          | 3        || 18.5
     }
 }

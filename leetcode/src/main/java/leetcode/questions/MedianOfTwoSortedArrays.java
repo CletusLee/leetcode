@@ -6,6 +6,9 @@ public class MedianOfTwoSortedArrays {
     }
     
     public double findMedianNumber(int[] num, int startIndex, int endIndex) {
-    	return num[(startIndex + (endIndex - startIndex)/2)];
+        double medianIndex = startIndex + ((double) endIndex - (double) startIndex) / 2;
+        int ceilingMedianIndex = (int) Math.ceil(medianIndex);
+        int floorMedianIndex = (int) Math.floor(medianIndex);
+        return ((double) num[ceilingMedianIndex] + num[floorMedianIndex]) / 2;
     }
 }
