@@ -27,4 +27,5 @@ public class TestValidParentheses {
         assertThat(validParentheses.isValid("())"), is(false));
     }
 
+
 }
